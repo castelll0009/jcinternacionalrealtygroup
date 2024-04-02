@@ -7,10 +7,15 @@ import Cover from "./Cover.astro";
 <section
     id="about"
     class="section text-secondary dark:text-primary text-center bg-transparent"
-    style="padding: 16vw;  padding-top: 0px; background: transparent; background-size:10%;"
+    style={`padding: 16vw; padding-top: 0px; background: transparent; background-size: 10%; 
+    background-image: url(/bg2.png) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position-y: 0px !important;
+    `}
 >
     <div
-        class="flex md:flex-row flex-col gap-10 background-container z-10 pt-20"
+        class="flex md:flex-row flex-col gap-10 background-container z-10 pt-40"
     >
         <div class="flex-1 flex flex-row gap-5 h-fit ">
             <span class="text-[120px] text-[#4c4f58]">[</span>
@@ -34,7 +39,7 @@ import Cover from "./Cover.astro";
             </h4>
         </div>
         <div class="flex-1  w-[200px]">
-            <p class="line-clamp-[10] text-sm text-[#4c4f58] text-start">
+            <p class="line-clamp-[10] text-sm text-[#7f7f7f] text-start">
                 Real Estate is considered the safest investment avenue for
                 making profits. With the property prices rising as much as 25%,
                 Real Estate makes perfect investment sense. That is one reason
