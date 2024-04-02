@@ -25,7 +25,7 @@ const catalogo = await catalogoPromise;
 ---
 
 <Layout title={clientData.web_name} subtitle={clientData.subtitle}>
-    <Covercomp imgMobil="/portada_mobil.png" imgPc="/portada.png"></Covercomp>
+    <Covercomp imgMobil="/cover.jpg" imgPc="/cover.jpg"></Covercomp>
     <Stack arrayTiendas={tiendas}></Stack>
     {catalogo.map((cat, index) => (
         <Catalogo key={index} arrayProductos={cat.product} sectionTitle={cat.titulo}></Catalogo>
