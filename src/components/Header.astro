@@ -3,16 +3,17 @@
 import clientData from "../config/clientData.json";
 import ThemeIcon from "./ui/ThemeIcon.astro";
 const headerNavs = [
-  { url: "/kit", label: "kit" },
-  { url: "/carnetdigital", label: "carnet digital" },
-  { url: "/formatos", label: "formatos" },
-  { url: "/links", label: "links" },
-  { url: "/dev", label: "dev" },  
-  { url: "/signin`", label: "iniciar sesion" },    
+  { url: "/home", label: "home" },
+  { url: "/MLS search", label: "MLS search" },  
+  { url: "/officedirectory", label: "office directory" },
+  { url: "/contact", label: "contact" },  
+     
   // {"url": "/gallery", "label": "Gallery"},
   // {"url": "/testimonials", "label": "Testimonials"}
 ];
 ---
+
+
 
 <style>
   header {
@@ -37,26 +38,16 @@ const headerNavs = [
   }
 </style>
 
-<header transition:persist
-  class="bg-transparent md:bottom-auto bottom-0 w-full fixed z-40 border-gray-200    text-primary dark:text-secondary"
+<header transition:persist id="header-nav"
+  class="bg-transparent md:bottom-auto bottom-0 w-full fixed z-40 border-gray-200 text-primary dark:text-secondary   "
 >
   <div
-    class="max-w-screen  flex flex-wrap items-center justify-evenly mx-10 p-4"
+    class="max-w-screen flex flex-wrap items-center justify-evenly mx-10 p-4"
   >
     <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-      <svg
-      class="text-primary dark:text-secondary" 
-        xmlns="http://www.w3.org/2000/svg"
-        width="3em"
-        height="3em"
-        viewBox="0 0 20 20"
-        ><path
-          fill="currentColor"
-          d="M8.7 7A1.7 1.7 0 0 0 7 8.7A1.3 1.3 0 0 0 8.3 10h3.4A1.3 1.3 0 0 0 13 8.7A1.7 1.7 0 0 0 11.3 7zM8 8.7a.7.7 0 0 1 .7-.7h2.6a.7.7 0 0 1 .7.7a.3.3 0 0 1-.3.3H8.3a.3.3 0 0 1-.3-.3M10 2a2.5 2.5 0 0 0-2.5 2.5v.044A6.001 6.001 0 0 0 4 10v5a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3v-5a6.001 6.001 0 0 0-3.5-5.456V4.5A2.5 2.5 0 0 0 10 2m5 10H5v-2a5 5 0 0 1 10 0zm-8 2.5a.5.5 0 0 0 1 0V13h7v2a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-2h2zM10 4a6.05 6.05 0 0 0-1.466.18a1.5 1.5 0 0 1 2.932 0C10.996 4.063 10.506 4 10 4"
-        ></path></svg
-      >
+      <svg class="text-third "  xmlns="http://www.w3.org/2000/svg" width="3.2em" height="3.2em" viewBox="0 0 48 66"><g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path fill="currentColor" fill-rule="evenodd" stroke="#000" d="M17 14L44 24V44H17L17 14Z" clip-rule="evenodd"/><path stroke="#000" d="M17 14L4 24L4 44H17"/><path stroke="#fff" d="M35 44V32L26 29L26 44"/><path stroke="#000" d="M44 44H17"/></g></svg>
       <span
-        class="self-center text-2xl font-semibold whitespace-nowrap text-primary dark:text-secondary "
+        class="self-center text-2xl font-semibold whitespace-nowrap  "
       >
         {clientData.web_name}</span
       >
@@ -68,20 +59,7 @@ const headerNavs = [
       class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
     >
       <span class="sr-only">Open main menu</span>
-      <svg
-        class="w-5 h-5"
-        aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 17 14"
-      >
-        <path
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M1 1h15M1 7h15M1 13h15"></path>
-      </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="21" stroke-dashoffset="21" d="M5 21H19"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="21;0"/></path><path stroke-dasharray="15" stroke-dashoffset="15" d="M5 21V8M19 21V8"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="15;0"/></path><path stroke-dasharray="26" stroke-dashoffset="26" d="M2 10L12 2L22 10"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.5s" dur="0.4s" values="26;0"/></path></g></svg>
     </button>
 
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
@@ -91,11 +69,11 @@ const headerNavs = [
         <li>
           <a
             href="/"
-            class="block py-2 px-3 text-third rounded md:bg-transparent md:text-secondary md:p-0 dark:text-white"
+            class="block py-2 px-3 rounded md:bg-transparent  md:p-0 "
             aria-current="page"
           >
             <svg
-            class="text-primary dark:text-secondary"
+            class=""
               xmlns="http://www.w3.org/2000/svg"
               width="1.5em"
               height="1.5em"
@@ -168,7 +146,7 @@ const headerNavs = [
             <li>
               <a
                 href={nav.url}
-                class="block py-2 capitalize px-3 text-primary dark:text-secondary rounded md:bg-transparent  md:p-0 "
+                class="block py-2 capitalize px-3  rounded md:bg-transparent  md:p-0 "
                 aria-current="page"
                 style="    text-transform: capitalize;"
               >
@@ -233,3 +211,7 @@ const headerNavs = [
    
   });
 </script>
+
+
+
+
