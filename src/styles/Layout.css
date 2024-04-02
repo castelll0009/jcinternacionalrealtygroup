@@ -73,8 +73,8 @@ h1, h2, h3, h4, h5, h6, span, a {
 }
 
 .dark .section {
-  background: #1f2937ed !important;
-  background: radial-gradient(#474747, #111827) !important;
+  background: #23262d !important;
+  /* background: radial-gradient(#474747, #111827) !important; */
 }
 
 .section:not(.dark) {

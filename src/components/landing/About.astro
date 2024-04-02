@@ -1,29 +1,74 @@
 ---
-import BgAbout from '../icons/Bg_about.astro'
-import About2_title from '../icons/About2_title.astro'
+import BgAbout from "../icons/Bg_about.astro";
+import About2_title from "../icons/About2_title.astro";
+import Cover from "./Cover.astro";
 ---
 
-<section id="about" class="section text-secondary dark:text-primary    text-center " style="padding-left: 0px; padding-right: 0px;">    
-    <h6 class="text-5xl   font-bold bg-dark text-center bg-secondary  pb-2  text-white  ">Acerca de</h6>
-    <article class="flex  flex-col md:flex-row justify-center ">
-        <span class="flex-1">            
-            <BgAbout></BgAbout>               
-        </span>
-        <span class="flex-1 p-10 md:p-20 text-secondary dark:text-primary  ">
-            <About2_title></About2_title>
-       
-            <p class=" pt-16  text-justify ">
-                En CAD™, nos enorgullece ser una fusión armoniosa de ingenieros, desarrolladores, diseñadores y apasionados expertos en marketing. Nuestra sinergia se nutre de la diversidad de habilidades y perspectivas, poniendo énfasis en el arte, la ingeniería y las estrategias de marketing innovadoras.
-                <br>
-                <br>
-                Somos artífices de experiencias cautivadoras, donde cada línea de código es una obra de arte y cada diseño está meticulosamente elaborado. Nuestra prioridad es fusionar la creatividad con la funcionalidad, construyendo puentes entre la estética, la ingeniería y el marketing.   
+<section
+    id="about"
+    class="section text-secondary dark:text-primary text-center bg-transparent"
+    style="padding: 16vw;  padding-top: 0px; background: transparent; background-size:10%;"
+>
+    <div
+        class="flex flex-row gap-10 background-container z-10 pt-20"
+    >
+        <div class="flex-1 flex flex-row gap-5 h-fit ">
+            <span class="text-[120px] text-[#4c4f58]">[</span>
+            <div class="flex flex-row self-center " style="align-items: end;">
+                <h6 class="text-6xl text-third">25%</h6>
+                <h6
+                    class="text-md w-[80px] font-bold bg-dark text-center "
+                >
+                    Prices Soaring High
+                </h6>
+            </div>
+           
+            <span class="text-[120px] text-[#4c4f58]">]</span>
+        </div>
+        <div class="flex-1">
+            <h6 class="text-sm tracking-[6px] bg-dark text-start pb-2 text-third uppercase">
+                Services
+            </h6>
+            <h4 class="font-semibold text-3xl w-[300px] text-start">
+                Discover Your Perfect Real Estate Services
+            </h4>
+        </div>
+        <div class="flex-1  w-[200px]">
+            <p class="line-clamp-[10] text-sm text-[#4c4f58] text-start">
+                Real Estate is considered the safest investment avenue for
+                making profits. With the property prices rising as much as 25%,
+                Real Estate makes perfect investment sense. That is one reason
+                why Real Estate is so sought after. If you wanted to look for a
+                really good deal in Real Estate, you should start by contacting
+                JC International Realty Group, LLC today. Whether you are
+                looking for your first home to live in, renting out an apartment
+                or looking for investment real estate property, we are the right
+                Real Estate Broker in Florida to call.
             </p>
-        </span>
+            <button
+                type="button"
+                class="mt-4 gap-2 text-gray-900 flex flex-row bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 w-max"
+            >
+                Continue reading
+                <svg
+                    class="w-6 h-6 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                >
+                    <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+                </svg>
+            </button>
+        </div>
 
-    </article>
-        
-   
-
+        <!-- <div class="absolute inset-0 -z-10">
+            <BgAbout  />
+          </div> -->
+    </div>
 </section>
-
-
