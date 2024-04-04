@@ -40,35 +40,33 @@ html a:hover {
 h1, h2, h3, h4, h5, h6, span, a {
  font-family: 'Roboto', sans-serif;
 }
+h2{
+  font-size: xx-large;
+}
 
 
 /* Estilos generales para todos los dispositivos */
 .section {
-  padding-top: 20px;
-  padding-bottom: 50px;
+  padding: 6vw;  
+
 }
 
 
 /* Media query para dispositivos de escritorio (PC) */
 @media (min-width: 768px) {
-  .section {
-    padding-top: 80px;
-    padding-left: 20vw;
-    padding-right: 20vw;
+  .section {   
+    padding: 6vw;    
   }
   .section_broad{
-    padding-top: 80px;
-    padding-left: 5.6vw;
-    padding-right: 5.6vw;
+    padding-left:8vw;  
+    padding-right: 8vw ;
   }
 }
 
 /* Media query para dispositivos móviles */
 @media (max-width: 767px) {
   .section {
-    /* Estilos específicos para dispositivos móviles */
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding: 6vw;    
   }
 }
 
