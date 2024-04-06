@@ -19,6 +19,8 @@ import About2Title from "../components/icons/About2_title.astro";
 import Introduction from "../components/landing/Introduction.astro";
 import Services from "../components/landing/Services.astro";
 import WhyChooseUs from "../components/resources/WhyChooseUs.astro";
+import Team from "../components/landing/Team.astro";
+
 
 const tiendasPromise = getTiendasFromSupabase();
 const tiendas = await tiendasPromise; // Esperar a que se resuelva la promesa
@@ -36,6 +38,7 @@ const catalogo = await catalogoPromise;
 
     <Services />
     <WhyChooseUs></WhyChooseUs>
+    <Team></Team>
 
     <!-- <Stack arrayTiendas={tiendas}></Stack>
     {catalogo.map((cat, index) => (

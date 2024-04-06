@@ -1,0 +1,15 @@
+---
+import HeadTitle from "../resources/HeadTitle.astro"
+
+interface Props {
+headtitle: string;
+title : string;
+}
+const {headtitle,title } = Astro.props;
+---
+<div class="self-start pb-16 pt-2">
+    <HeadTitle title={headtitle} />
+    <h2 class=" md:w-[500px] text-start text-secondary dark:text-primary">
+       {title}
+    </h2>
+</div>

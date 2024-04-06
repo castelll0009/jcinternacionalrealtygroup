@@ -34,7 +34,7 @@ html a {
 
 html a:hover {
   text-decoration: none;
-  color: tan;
+  color: rgb(145 177 83);
 }
 
 h1, h2, h3, h4, h5, h6, span, a {
@@ -71,7 +71,7 @@ h2{
 }
 
 .dark .section {
-  background: #23262d !important;
+  background: radial-gradient(#273768, #263755) !important;;    
   /* background: radial-gradient(#474747, #111827) !important; */
 }
 

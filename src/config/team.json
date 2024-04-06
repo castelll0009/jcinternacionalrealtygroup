@@ -2,24 +2,24 @@
     "team":[
         {
         "image": "/team/castell.svg",
-        "name": "Ivan E. Castillo",
-        "carrer": "Ingeniero de Sistemas"             
+        "name": "Jane Doe",
+        "carrer": "Manager business"             
         },
         {
         "image": "/team/core.svg",
-        "name": "@core_banner",
-        "carrer": "Diseñador Grafico"       
+        "name": "Jane Doe",
+        "carrer": "Engineer"       
 
         },
         {
         "image": "/team/member3.svg",
-        "name": "Mónica Castillo",
-        "carrer": "Diseñadora Grafica"       
+        "name": "Jane Doe",
+        "carrer": "Invester real state"       
         },
         {
         "image": "/team/member4.svg",
-        "name": "Force Staff",
-        "carrer": "Arte Digital"        
+        "name": "Jane Doe",
+        "carrer": "Designer"        
         }
         ]
 }
